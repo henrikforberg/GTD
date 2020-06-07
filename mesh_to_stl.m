@@ -35,7 +35,6 @@ axis equal;axis off;grid off;
 set(gcf,'color',[0.0 0.0 0.0]);
 set(gca,'Projection','perspective','view',[30 30]);
 patch('Faces',Fx,'Vertices',Nx,'FaceColor',[1 0.5 0.5],'EdgeColor','none');
-%patch('Faces',Fstl,'Vertices',Nstl,'FaceColor',[1 0.5 0.5]);
 camlight('right');
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
