@@ -62,8 +62,6 @@ function E = switch_edge(E, EL, num_nodes)
         E(p, :) = [winner new_connection];
     elseif s
         E(t, :) = [new_connection winner];
-    else
-        fprintf("\nMystisk feil");
     end 
     E = E.';
 end
