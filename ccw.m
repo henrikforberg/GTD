@@ -1,4 +1,5 @@
 function value = ccw(p1, p2, p3)
+
     value = 0;
     dx1 = p2(1)-p1(1);
     dy1 = p2(2)-p1(2);
