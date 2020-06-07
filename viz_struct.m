@@ -34,6 +34,5 @@ function viz_struct(N,E,r, num)
     set(gcf,'color',[1 1 1]);
     set(gca,'Projection','perspective','view',[30 30]);
     patch('Faces',Fx,'Vertices',Nx,'FaceColor',[1 1 1],'EdgeColor','none');
-    %patch('Faces',Fstl,'Vertices',Nstl,'FaceColor',[1 0.5 0.5]);
     camlight('right');
 end
