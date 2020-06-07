@@ -1,9 +1,8 @@
-function[selected] = crowding_operator(front, num)
+function [selected] = crowding_operator(front, num)
 
     % Find first instance of a worse rank after position num
     init = 1;
     f = front(:,4);
-    
 
     if f(1) == f(end)
         % All candidates have the same rank
@@ -51,7 +50,6 @@ function [selected] = sorting_alg(front, from, to, num)
         fprintf("wtf");
     end
 end
-
 
 function [selected] = crowding_distance_sort(front, num)
 
