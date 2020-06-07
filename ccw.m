@@ -1,4 +1,4 @@
-function value = ccw(p1, p2, p3)
+function [value] = ccw(p1, p2, p3)
 
     value = 0;
     dx1 = p2(1)-p1(1);
