@@ -1,5 +1,4 @@
 function [crit, sharp_angles] = fdm_angles(EL, N, scale, i)
-
     % This function sets a criteria true if:
     % the angle between the normal of the XY-plane,
     % and the vector edges of a given node,
@@ -10,7 +9,6 @@ function [crit, sharp_angles] = fdm_angles(EL, N, scale, i)
     list = EL(:, i);
     sharp_angles = [];
    
-    
     for x=1:length(list)
       
         if list(x) == 0
