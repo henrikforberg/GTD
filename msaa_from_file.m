@@ -10,7 +10,7 @@ tmp = 10;       % Temperature
 stp  = 1;       % Step size  
 s = 100;        % Scale
 p = 2;          % Parpool size
-FDM = 0;        % Support-Free
+FDM = 1;        % Support-Free
 
 N = {N};
 E = {E};
