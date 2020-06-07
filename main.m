@@ -8,17 +8,17 @@
 clear all;  
 
 % Program parameters 
-FDM = 0;        % Support-Free (0/1)
-v   = 1;        % Visualize evolution
+FDM = 1;        % Support-Free (0/1)
+v   = 0;        % Visualize evolution
 p   = 1;        % Specify parpool size 
 mx  = 6;        % Number of saved candidates 
 h   = 12;       % Model height 
 s   = 100;      % Model scale
 
 % NSGA-II Hyperparameters  
-pop = 1000;     % Population size
-sel = 500;      % Selection number
-gen = 100;      % Number of generations
+pop = 10000;    % Population size
+sel = 1000;     % Selection number
+gen = 200;      % Number of generations
 e_m = 0.40;     % Edge-mutation rate
 n_m = 0.10;     % Node-mutation rate
 n_g = 0.40;     % Node-generation rate
@@ -54,7 +54,6 @@ clc;
 [N_F, E_F, d_f] =  nsga_2(FDM, N, E, s, v,...
                           pop, gen, sel, e_m, n_m, n_g, crs, mx);
                       
-return
 [N_F, E_F] = msaa(FDM, N_F, E_F, tmp, stp, s, d_f);
 
 
