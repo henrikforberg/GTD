@@ -1,4 +1,4 @@
-function[crit, sharp_angles] = fdm_angles(EL, N, scale, i)
+function [crit, sharp_angles] = fdm_angles(EL, N, scale, i)
 
     % This function sets a criteria true if:
     % the angle between the normal of the XY-plane,
