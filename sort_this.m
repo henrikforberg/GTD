@@ -1,4 +1,4 @@
-function[selected_n, selected_e, selected_f] = sort_this(gen_n, gen_e, sn, population)
+function [selected_n, selected_e, selected_f] = sort_this(gen_n, gen_e, sn, population)
     len = length(sn);   
     selected_n = cell(len);
     selected_e = cell(len);
