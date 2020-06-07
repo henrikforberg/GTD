@@ -49,7 +49,6 @@ function[check_fdm, check_fitness, N, E, EL, fitness, L_fitness] = msaa_optimize
         end
     end
 
-   
     if N(i,3) < scale
         N(i,3) = scale;
     elseif N(i,3) > scale 
