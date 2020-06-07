@@ -1,5 +1,4 @@
 function [N, E] = remove_connection(N, E)
-    E
     top = length(N(:,3));
     connection = randi([4 top-1], 1);
     
