@@ -1,5 +1,4 @@
-function[EdgeList] = edge_list(E, num)
-
+function [EdgeList] = edge_list(E, num)
     % Return the edgelist for matrix E
     
     EdgeList = [];
@@ -22,8 +21,6 @@ function[EdgeList] = edge_list(E, num)
            temp(count) = E(1, B(k));
            count = count+1;
        end
-       %jfk = EdgeList
-       %mistersir = temp
        EdgeList = [EdgeList temp];
     end
 end
