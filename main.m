@@ -10,7 +10,7 @@ clear all;
 % Program parameters 
 FDM = 1;        % Support-Free (0/1)
 v   = 0;        % Visualize evolution
-p   = 1;        % Specify parpool size 
+p   = 2;        % Specify parpool size 
 mx  = 6;        % Number of saved candidates 
 h   = 12;       % Model height 
 s   = 100;      % Model scale
