@@ -1,4 +1,4 @@
-function[N, E] = generate_connection(N, E, new_Node, num)
+function [N, E] = generate_connection(N, E, new_Node, num)
 
     num_nodes = length(N);
     E=E';
