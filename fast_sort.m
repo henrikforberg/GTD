@@ -34,8 +34,7 @@ function[fr_1, fr_2, fr_3, fr_4] = fast_sort(population)
             f_pop = [f_pop; [candidate n]];
         end
     end
-
-    
+  
     % Find remaining fronts
     for i = 2:num_fronts
         % Initialize next front 
@@ -59,9 +58,7 @@ function[fr_1, fr_2, fr_3, fr_4] = fast_sort(population)
         n = temp_pop(:,4);
         minimum = min(n);
         temp_front = n == minimum; 
-        %size(temp_pop)
         F_i{i,1} = temp_pop(temp_front, :);
-
         f_pop(temp_front, :) = [];
     end 
 end
