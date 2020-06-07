@@ -64,7 +64,6 @@ function [N, E] = msaa(FDM, N, E, temperature, step, scale, directory)
                     break;
                 elseif check_fitness
                     check = true;
-                    %viz_struct(N_i./10, E_i, 2, 2);
                 end
             end
         end
