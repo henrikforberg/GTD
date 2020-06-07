@@ -21,7 +21,6 @@ function[crit, sharp_angles] = fem_angles(EdgeList, N, i)
             % Define beam vectors
             z = N(list(x), :) - N(i, :);
             
-            
             for y=2:length(list)
                 a = not(ismember([list(x) list(y)], temp, 'rows'));
                 b = not(list(y) == 0);
