@@ -1,6 +1,6 @@
 function plot_F(N,F, s, varargin)
-    % Enkel F plotter
-    % N er nodelist, skalerer vektorer med s
+    % simple F plot
+    % N is nodelist, scale vectors by s
 
     %%%%%%%%%%%%%%%%%%%%% START VARARGIN %%%%%%%%%%%%%%%%%%%%%%%%%
     figNr = 1;
