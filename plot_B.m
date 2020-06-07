@@ -1,6 +1,6 @@
 function plot_B(N,B,siz, varargin)
-    % Enkel bounday B plotter, siz>0 er diam pÂ plottringer for meshplot
-    % hvis siz = -1 plottes linjer for vokselplott
+    % Simple bounday B plot, siz>0 diameter of plot rings for meshplot
+    % size = -1 plots lines for voxelplot
 
     %%%%%%%%%%%%%%%%%%%%% START VARARGIN %%%%%%%%%%%%%%%%%%%%%%%%%
     figNr = 1;
@@ -20,7 +20,7 @@ function plot_B(N,B,siz, varargin)
 
     [dimX, dimY] = size(B);
 
-    % fjerner rader som ikke er 0 0 0 da de ikke er lÂste
+    % fjerner rader som ikke er 0 0 0 da de ikke er lÃ‚ste
     M = N;
     for n=dimX:-1:1
         if B(n,1) ~= 0 || B(n,2) ~= 0 || B(n,3) ~= 0
