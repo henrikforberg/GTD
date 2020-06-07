@@ -1,7 +1,7 @@
 function check = intersect_2D(vec_1, vec_2)
 
     % Returns 1 if the lines intersect 
-    % in minimum one out of three planes
+    % in at least one out of three planes
     % Returns 0 otherwise
     check = 0;
 
