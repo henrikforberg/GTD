@@ -17,7 +17,6 @@ function [stiffness, longest, weight, check] = frame_3D(GDof,numberElements,elem
         y2=nodeCoordinates(indice(2),2);
         z2=nodeCoordinates(indice(2),3);
         
-
         L = sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1) + (z2-z1)*(z2-z1));
         weight = weight+L;
         
@@ -70,5 +69,4 @@ function [stiffness, longest, weight, check] = frame_3D(GDof,numberElements,elem
         R = [Lambda zeros(3,9); zeros(3) Lambda zeros(3,6); zeros(3,6) Lambda zeros(3);zeros(3,9) Lambda];
         stiffness(elementDof,elementDof) = stiffness(elementDof,elementDof)+R'*k*R;
     end
-    %avg_length = avg_length/numberElements;
 end
