@@ -141,17 +141,16 @@ function [F_N, F_E, directory] = nsga_2(FDM, N, E, scale, viz, pop, gen, sel, e_
        
         if viz %plot
             % Visualize pareto front
-            %figure(1);
-            %scatter(final_front(:,1), final_front(:,2))
+            figure(1);
+            scatter(final_front(:,1), final_front(:,2))
         
             % Visualize F_d optimum
             viz_struct(best_n{fr_1(pos(1),3)}./10, best_e{fr_1(pos(1),3)}, 2, 2);
         
             % Visualize F_b optimum
-            %viz_struct(best_n{fr_1(pos_2(1),3)}./10, best_e{fr_1(pos_2(1),3)}, 2, 3);
+            viz_struct(best_n{fr_1(pos_2(1),3)}./10, best_e{fr_1(pos_2(1),3)}, 2, 3);
             
             [a, ~, ~] = fem(best_n{fr_1(pos(1),3)}, best_e{fr_1(pos(1),3)});
-            a
             plot_displacements(best_n{fr_1(pos(1),3)}, best_e{fr_1(pos(1),3)}, a, scale)
         end
 
@@ -170,7 +169,7 @@ function [F_N, F_E, directory] = nsga_2(FDM, N, E, scale, viz, pop, gen, sel, e_
         elapsed_time = toc;
         diagram(i,:) = [i, elapsed_time, round(top_obj_1(1)), round(top_obj_2(2)), info(1), info(2), info(3)];
         
-        %clc;
+        clc;
         fprintf("-> NSGA-II:\n> Generation: %i/%i, time: %i Seconds \n> Min: F_d = %i\t(F_b = %i)\n> Min: F_b = %i\t(F_d = %i)", i, gen, round(elapsed_time), round(top_obj_1(1)),  round(top_obj_1(2)), round(top_obj_2(2)),  round(top_obj_2(1)));
     end
 
