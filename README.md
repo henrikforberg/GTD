@@ -1,4 +1,4 @@
-# gd
+# GTD
 Generative Truss Design for Support-Free Fused Deposition Modeling
 * Run 'main.m' for the entire model 
 * Run 'msaa_from_file.m' for shape-optimization of a specific truss topology
