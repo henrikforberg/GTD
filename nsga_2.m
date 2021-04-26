@@ -47,7 +47,6 @@ function [F_N, F_E, directory] = nsga_2(FDM, N, E, scale, viz, pop, gen, sel, e_
             end
             
             % Offspring 
-            %fprintf("\nSJEKK1");
             EL = edge_list(gen_e{j}, length(gen_n{j}));
             
             % Find beam intersections in candidate
@@ -58,7 +57,6 @@ function [F_N, F_E, directory] = nsga_2(FDM, N, E, scale, viz, pop, gen, sel, e_
                     [N_Final, E_Final, check_int, ~] = find_intersection(gen_n{j}, gen_e{j}, EL);
                     gen_n{j} = N_Final;
                     gen_e{j} = E_Final;  
-                    %fprintf("\nSJEKK2");
                     EL = edge_list(gen_e{j}, length(gen_n{j}));
                     counter = counter+1;
                    
